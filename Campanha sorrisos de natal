@@ -5,77 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrecadação de Natal</title>
     <style>
+        /* Estilo geral */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
+        /* Cabeçalho */
         header {
-            background-color: #ff4d4d;
+            background: linear-gradient(90deg, #b71c1c, #ff8a80);
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 30px 20px;
+            position: relative;
         }
 
-        h1 {
-            font-size: 2.5em;
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
+        header:before {
+            content: '';
+            background: url('https://i.imgur.com/3XfK3c7.png') no-repeat center;
+            background-size: 100px;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            top: -50px;
+            left: 0;
+            opacity: 0.2;
+        }
+
+        /* Seções */
         section {
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        #doacao button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-
-        #doacao button:hover {
-            background-color: #45a049;
-        }
-
-        .doar-btn {
-            background-color: #2b93d4; /* cor do Mercado Pago */
-            color: white;
-            padding: 10px 20px;
+        section h2 {
+            font-size: 2em;
+            color: #b71c1c;
             text-align: center;
-            display: inline-block;
-            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        section p {
             font-size: 1.2em;
+            line-height: 1.8em;
+            text-align: justify;
+        }
+
+        /* Botão de doação */
+        .doar-btn {
+            display: inline-block;
+            text-align: center;
+            background-color: #ff6f00;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 10px;
             text-decoration: none;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
         }
 
         .doar-btn:hover {
-            background-color: #2586b5;
+            background-color: #e65100;
+            transform: scale(1.05);
         }
 
+        /* Rodapé */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            margin-top: 20px;
+            background-color: #b71c1c;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ajude no Natal</h1>
+        <h1>Sorrisos de Natal</h1>
     </header>
 
     <section id="sobre">
         <h2>Sobre a Campanha</h2>
-        <p>Através dessa campanha, buscamos levar um pouco de felicidade e esperança para as crianças que enfrentam dificuldades. Com a sua doação, podemos proporcionar um Natal cheio de sorrisos e carinho.</p>
+        <p>
+            Através dessa campanha, buscamos levar um pouco de felicidade e esperança para as crianças que enfrentam dificuldades. 
+            Com a sua doação, podemos proporcionar um Natal cheio de sorrisos e carinho.
+        </p>
     </section>
 
     <section id="doacao">
@@ -84,10 +119,7 @@
     </section>
 
     <footer>
-        <p>&copy; Todos os direitos reservados</p>
+        <p>&copy; 2024 Sorrisos de Natal. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-</script>
 </body>
 </html>
